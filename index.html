@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheets-Like Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li id="file">File
+                <ul id="file-menu">
+                    <li id="new">New</li>
+                    <li id="open">Open</li>
+                    <li id="import">Import</li>
+                    <li id="copy">Make a Copy</li>
+                </ul>
+            </li>
+            <li id="insert">Insert
+                <ul id="insert-menu">
+                    <li id="insert-row">Row</li>
+                    <li id="insert-column">Column</li>
+                    <li id="insert-chart">Chart</li>
+                    <li id="insert-function">Function
+                        <ul id="function-menu">
+                            <li id="sum">Sum</li>
+                            <li id="avg">Average</li>
+                            <li id="max">Max</li>
+                            <li id="min">Min</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li id="text-format">Text Format
+                <ul id="text-format-menu">
+                    <li id="upper">Uppercase</li>
+                    <li id="lower">Lowercase</li>
+                    <li id="trim">Trim</li>
+                    <li id="remove-duplicates">Remove Duplicates</li>
+                    <li id="find-replace">Find & Replace</li>
+                </ul>
+            </li>
+            <li id="style">Style
+                <ul id="style-menu">
+                    <li id="bold">Bold</li>
+                    <li id="italic">Italic</li>
+                    <li id="font-size">Font Size
+                        <ul id="font-size-menu">
+                            <li id="size-10">10</li>
+                            <li id="size-14">14</li>
+                            <li id="size-18">18</li>
+                            <li id="size-24">24</li>
+                        </ul>
+                    </li>
+                    <li id="font-color">Font Color
+                        <input type="color" id="font-color-picker">
+                    </li>
+                </ul>
+            </li>
+            <li id="edit">Edit
+                <ul id="edit-menu">
+                    <li id="undo">Undo</li>
+                    <li id="redo">Redo</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="search">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-btn">Search</button>
+    </div>
+
+    <div id="output"></div>
+    
+    <div id="spreadsheet-container">
+        <table id="spreadsheet">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
